@@ -12,6 +12,25 @@ CREATE TABLE dim_customer (
 -- Populate the dim_customer table with unique customers from transactions_clean
 
 INSERT INTO dim_customer (customer_id, country)
+SELECT
+    customer_id,
+    country
+FROM (
+    SELECT
+        customer_id,
+        country,
+        ROW_NUMBER() OVER (
+            PARTITION BY customer_id
+            ORDER BY invoice_date DESC
+        ) AS rn
+    FROM transactions_clean
+    WHERE customer_id IS NOT NULL
+) t
+WHERE rn = 1;
+
+-- Alternative simpler approach (may lead to duplicates if customer_id appears with different countries)
+
+INSERT INTO dim_customer (customer_id, country)
 SELECT DISTINCT
     customer_id,
     country
@@ -29,3 +48,4 @@ FROM dim_customer;
 
 SELECT COUNT(DISTINCT customer_id) 
 FROM transactions_clean;
+
