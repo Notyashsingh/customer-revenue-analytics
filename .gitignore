@@ -11,6 +11,8 @@ data/processed/*
 !data/processed/customer_metrics.csv
 !data/processed/product_metrics.csv
 !data/processed/monthly_revenue_metrics.csv
+!data/processed/customer_retention_matrix.csv
+!data/processed/revenue_forecast.csv
 
 # Environment
 .env
