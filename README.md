@@ -23,6 +23,17 @@ The result is a **reproducible analytics pipeline** that can support dashboards,
 
 ## 🧱 Project Architecture (High Level)
 
+Raw Excel Data
+↓
+Python Ingestion & Cleaning
+↓
+PostgreSQL (Staging → Clean Tables)
+↓
+Fact & Dimension Modeling
+↓
+Metrics & Analytics
+↓
+Visualizations & Dashboard
 
 Clear separation of concerns is maintained throughout:
 - Python for ingestion and transformation
@@ -38,28 +49,29 @@ Clear separation of concerns is maintained throughout:
 - **Data Modeling**: Star-schema style (facts & dimensions)  
 - **Notebooks**: Jupyter  
 - **Version Control**: Git & GitHub  
-- **Visualization**: Python charts (Power BI-ready outputs)
+- **Visualization**: Python charts and Power BI
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-📁 credit-card-analytics/
+📁 customer-revenue-analytics/
 ├── 📁 data/
-│   ├── 📁 raw/                   # Transaction CSVs
+│   ├── 📁 raw/                   # Raw CSVs
 │   └── 📁 processed/             # Cleaned data
 ├── 📁 sql/
-│   ├── 📁 Queries/               # DDL scripts, EDA queries, Final analytics
-├── 📁 notebooks/                 # Python EDA
-├── 📁 visualaizations/           # Charts for README
-├── 📁 reports/
-│   └── Credit-Card-Analytics-Case-Study.pdf
-├── 🐘 init.sql
+│   ├── 📁 Queries/               
+├── 📁 notebooks/
+    ├── 📁 Queries/               
+├── 📁 visualaizations/           
+├── 📁 Dashboard/
 └── 📄 README.md
 
-Each notebook and SQL file has a **single responsibility**, following production analytics best practices.
+<img width="1060" height="598" alt="Schema" src="https://github.com/user-attachments/assets/454ebc8a-ff92-4706-8cb1-df31d87ba2c4" />
 
+Each notebook and SQL file has a **single responsibility**, following production analytics best practices.
+```
 ---
 
 ## 🧩 Data Model
@@ -114,7 +126,9 @@ The project produces clean, executive-ready visuals including:
 - Cohort retention heatmaps
 - Historical vs forecasted revenue
 
-These visuals are designed to be **directly reusable in BI tools** such as Power BI or Tableau.
+## 📊 Visual Outputs
+
+<img width="2000" height="1148" alt="image" src="https://github.com/user-attachments/assets/cbe9ca26-4f92-485c-8ffd-44b09c226e15" />
 
 ---
 
