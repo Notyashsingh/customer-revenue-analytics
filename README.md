@@ -68,8 +68,6 @@ Clear separation of concerns is maintained throughout:
 ├── 📁 Dashboard/
 └── 📄 README.md
 
-<img width="1060" height="598" alt="Schema" src="https://github.com/user-attachments/assets/454ebc8a-ff92-4706-8cb1-df31d87ba2c4" />
-
 Each notebook and SQL file has a **single responsibility**, following production analytics best practices.
 ```
 ---
@@ -90,6 +88,8 @@ This structure enables:
 - Consistent metric computation
 - Clean joins
 - Scalable analytics as data grows
+
+<img width="1060" height="598" alt="image" src="https://github.com/user-attachments/assets/622d67a7-4fd2-483e-89ff-9353e0a78f53" />
 
 ---
 
@@ -126,7 +126,7 @@ The project produces clean, executive-ready visuals including:
 - Cohort retention heatmaps
 - Historical vs forecasted revenue
 
-## 📊 Visual Outputs
+## 📊 Final Dashboard
 
 <img width="2000" height="1148" alt="image" src="https://github.com/user-attachments/assets/cbe9ca26-4f92-485c-8ffd-44b09c226e15" />
 
