@@ -21,7 +21,7 @@ The result is a **reproducible analytics pipeline** that can support dashboards,
 
 ---
 
-## 🧱 Project Architecture (High Level)
+## 🧱 Project Architecture
 
 Raw Excel Data
 ↓
