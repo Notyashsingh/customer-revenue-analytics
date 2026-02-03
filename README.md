@@ -98,22 +98,27 @@ This structure enables:
 ### Customer Analytics
 - Revenue concentration among top customers
 - Identification of high-value repeat buyers
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/bd09c2c7-356b-4b64-9688-0c7347d635fe" />
 
 ### Product Performance
 - Revenue distribution across products
 - Clear Pareto-style concentration patterns
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/14360895-87cf-40bf-92a3-922c214a10cf" />
 
 ### Time-Series Analysis
 - Monthly revenue trends
 - Short-term volatility with long-term growth signals
+<img width="989" height="489" alt="image" src="https://github.com/user-attachments/assets/6024540e-8df8-423c-b815-90159533d02b" />
 
 ### Cohort & Retention Analysis
 - Customer retention decay over time
 - Differences in cohort quality across acquisition periods
+<img width="1126" height="727" alt="image" src="https://github.com/user-attachments/assets/396a63e7-c0a3-40b0-afd8-2e74b6f90fe1" />
 
 ### Forecasting
 - Baseline revenue forecasting using moving averages
 - Forward-looking view grounded in historical trends
+<img width="988" height="490" alt="image" src="https://github.com/user-attachments/assets/cff44db1-676b-4e63-9134-90892dabb2e4" />
 
 ---
 
