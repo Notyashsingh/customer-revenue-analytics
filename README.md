@@ -42,33 +42,21 @@ Clear separation of concerns is maintained throughout:
 
 ---
 
-## 🗂 Repository Structure
+## 📁 Repository Structure
 
-customer-revenue-analytics/
-│
-├── data/
-│ ├── raw/ # Original source files
-│ └── processed/ # Cleaned & analytics-ready datasets
-│
-├── notebooks/
-│ ├── 01_ingest_raw_excel.ipynb
-│ ├── 02_data_cleaning.ipynb
-│ ├── 03_data_validation.ipynb
-│ ├── 04_schema_modeling.ipynb
-│ ├── 05_metrics_generation.ipynb
-│ ├── 06_forecasting_and_insights.ipynb
-│ └── 07_visualizations.ipynb
-│
-├── sql/
-│ ├── staging_tables.sql
-│ ├── fact_dimension_models.sql
-│ ├── validation_queries.sql
-│ └── metrics_queries.sql
-│
-├── visualizations/
-│ └── *.png # Exported charts for reporting
-│
-└── README.md
+```
+📁 credit-card-analytics/
+├── 📁 data/
+│   ├── 📁 raw/                   # Transaction CSVs
+│   └── 📁 processed/             # Cleaned data
+├── 📁 sql/
+│   ├── 📁 Queries/               # DDL scripts, EDA queries, Final analytics
+├── 📁 notebooks/                 # Python EDA
+├── 📁 visualaizations/           # Charts for README
+├── 📁 reports/
+│   └── Credit-Card-Analytics-Case-Study.pdf
+├── 🐘 init.sql
+└── 📄 README.md
 
 Each notebook and SQL file has a **single responsibility**, following production analytics best practices.
 
